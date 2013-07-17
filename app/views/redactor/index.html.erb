@@ -1,0 +1,17 @@
+<h1>Redactor Example</h1>
+<br/><br/><br/>
+<div>
+	<%= form_tag "redactor/", :method => :get do %>
+		<div style="width: 600px; height: 600px;">
+			<%= text_area_tag :editor, "Beleza não põe mesa", :class => "redactor", :rols => 40, :cols => 120 %>
+		</div>
+		<div>
+			<%= submit_tag :enviar %>
+		</div>
+	<% end %>
+</div>
+<style>
+	.redactor_box{
+		height: 100%;
+	}
+</style>
